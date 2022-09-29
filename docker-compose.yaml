@@ -1,0 +1,8 @@
+version: '3'
+services:
+  jupyter-notebook:
+    image: pickonefish/jupyter-notebook:notebook-6.4.12
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./work:/home/jovyan/work/
